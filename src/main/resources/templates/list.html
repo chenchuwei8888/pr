@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+<a th:if="${emplist}!=null" th:each="emp :${emplist}">
+    <a th:text="${emp.lastName}"></a>
+    <a th:text="${emp.gender}"></a>
+    <a th:text="${emp.email}"></a>
+    <a th:text="${emp.dept.deptName}"></a>
+
+</a>
+</body>
+</html>
